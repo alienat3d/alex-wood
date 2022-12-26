@@ -12,39 +12,35 @@
     rel="stylesheet">
 
   <link rel="stylesheet" src="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" href="css/main.css?t=1672037197721">
+  <link rel="stylesheet" href="css/main.css?t=1672043609591">
 </head>
 
 <body>
-  <!-- Пример подключение SVG через спрайты
-  <svg>
-    <use xlink:href="img/icons/sprite.svg#clock"></use>
-  </svg>
-  -->
 
-  <!-- подключаем шапку -->
+  <!-- === HEADER === -->
   <header class="header">
-  <div class="header__inner">
-    <picture class="logo">
-      <!-- <source media="(min-width:650px)" srcset="">
+  <picture class="logo">
+    <!-- <source media="(min-width:650px)" srcset="">
       <source media="(min-width:465px)" srcset=""> -->
-      <img src="" alt="логотип Alex Wood">
-    </picture>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-item header__menu-item--active">
-          <a>Головна</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="gallery.html">Галерея</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="about.html">Про мене</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <source type="image/avif" srcset="img/logo.avif">
+    <source type="image/webp" srcset="img/logo.webp">
+    <img class="logo__img" src="img/logo.png" alt="логотип Alex Wood">
+  </picture>
+  <nav class="header__menu">
+    <ul class="header__menu-list">
+      <li class="header__menu-item header__menu-item--active">
+        <a>Головна</a>
+      </li>
+      <li class="header__menu-item">
+        <a href="gallery.html">Галерея</a>
+      </li>
+      <li class="header__menu-item">
+        <a href="about.html">Про мене</a>
+      </li>
+    </ul>
+  </nav>
 </header>
+  <!-- === / HEADER === -->
 
   <main class="content">
     <h1 class="main-title hide">Alex Wood - Вироби з дерева ручної роботи</h1>
@@ -59,16 +55,16 @@
       <picture class="hero__pic">
         <!-- <source media="(min-width:650px)" srcset=""> -->
         <!-- <source media="(min-width:465px)" srcset=""> -->
-        <source class="hero__img" type="image/avif" srcset="img/two-bottle-baskets-and-vase-2000px.avif">
-        <source class="hero__img" type="image/webp" srcset="img/two-bottle-baskets-and-vase-2000px.webp">
-        <img class="hero__img" src="img/two-bottle-baskets-and-vase-2000px.jpg" alt="">
+        <source type="image/avif" srcset="img/two-bottle-baskets-and-vase.avif">
+        <source type="image/webp" srcset="img/two-bottle-baskets-and-vase.webp">
+        <img class="hero__img" src="img/two-bottle-baskets-and-vase.jpg" alt="Підставки під винні пляшки з келихами">
       </picture>
     </section>
     <!-- === / HERO === -->
 
   </main>
 
-  <!-- подключаем подвал -->
+  <!-- === FOOTER === -->
   <footer class="footer">
   <p class="footer__author">
     Зроблено з любов'ю
@@ -81,12 +77,14 @@
     2022 © Всі права захищені
   </a>
 </footer>
+  <!-- === / FOOTER === -->
 
   </div>
 
 
-  <!-- подключаем js -->
-  <script src="js/main.js?t=1672037197721"></script>
+  <!-- === JAVASCRIPT === -->
+  <script src="js/main.js?t=1672043609591"></script>
+  <!-- === / JAVASCRIPT === -->
 </body>
 
 </html>

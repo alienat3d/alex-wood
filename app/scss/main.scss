@@ -1,5 +1,6 @@
-@import "variables"; //пишем переменные
-@import "reset"; //сборс стилей
+@import "reset";
+@import "variables";
+@import "global";
 
 body {
   font-family: "Inter", sans-serif;
@@ -10,23 +11,65 @@ body {
   color: $text;
 }
 
-.container {
-  padding: 0 15px;
-}
-// === REUSABLE ===
-.hide {
-  visibility: hidden;
+// === HEADER ===
+.header {
+  padding: 80px 30px 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // .header__menu
+  &__menu {
+  }
+  // .header__menu-list
+  &__menu-list {
+    display: flex;
+  }
+  // .header__menu-item + .header__menu-item
+  &__menu-item + .header__menu-item {
+    margin-left: 60px;
+  }
+  // .header__menu-item
+  &__menu-item {
+    position: relative;
+    font-size: 33px;
+
+    &--active {
+      font-weight: 500;
+      color: $title;
+      cursor: default;
+    }
+  }
+  &__menu-item:not(.header__menu-item--active)::before {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: $title;
+    transition: $fast;
+  }
+  &__menu-item:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
+
+  .logo {
+    margin-right: 170px;
+  }
 }
 
-.title {
-  text-align: center;
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 1.1;
-  color: $title;
+.hero {
+  // .hero__img
+  &__img {
+  }
 }
-// === / REUSABLE ===
+// === / HEADER ===
 
+// === HERO ===
 .hero {
   padding-left: 15px;
   display: flex;
@@ -73,6 +116,7 @@ body {
     max-width: 100%;
   }
 }
+// === / HERO ===
 
 // === FOOTER ===
 .footer {
