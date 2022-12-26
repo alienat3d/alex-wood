@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Wood - Головна</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" src="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- Пример подключение SVG через спрайты
+  <svg>
+    <use xlink:href="img/icons/sprite.svg#clock"></use>
+  </svg>
+  -->
+
+  <!-- подключаем шапку -->
+  @@include('blocks/index-header.html')
+
+  <main class="content">
+    <h1 class="main-title hide">Alex Wood - Вироби з дерева ручної роботи</h1>
+
+    <!-- === HERO === -->
+    <section class="hero">
+      <div class="hero__info-box">
+        <h2 class="hero__title title">Вироби з дерева ручної роботи</h2>
+        <p class="hero__text">Натуральна деревина і краса природи</p>
+        <a class="hero__link" href="products.html">Галерея</a>
+      </div>
+      <picture class="hero__pic">
+        <!-- <source media="(min-width:650px)" srcset=""> -->
+        <!-- <source media="(min-width:465px)" srcset=""> -->
+        <source class="hero__img" type="image/avif" srcset="img/two-bottle-baskets-and-vase-2000px.avif">
+        <source class="hero__img" type="image/webp" srcset="img/two-bottle-baskets-and-vase-2000px.webp">
+        <img class="hero__img" src="img/two-bottle-baskets-and-vase-2000px.jpg" alt="">
+      </picture>
+    </section>
+    <!-- === / HERO === -->
+
+  </main>
+
+  <!-- подключаем подвал -->
+  @@include('blocks/footer.html')
+
+  </div>
+
+
+  <!-- подключаем js -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

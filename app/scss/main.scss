@@ -1,0 +1,109 @@
+@import "variables"; //пишем переменные
+@import "reset"; //сборс стилей
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $body-bg;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.3;
+  color: $text;
+}
+
+.container {
+  padding: 0 15px;
+}
+// === REUSABLE ===
+.hide {
+  visibility: hidden;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1.1;
+  color: $title;
+}
+// === / REUSABLE ===
+
+.hero {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+
+  // .hero__info-box
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    max-width: 500px;
+    width: 100%;
+  }
+  // .hero__title
+  &__title {
+    margin-bottom: 28px;
+  }
+  // .hero__text
+  &__text {
+    margin-bottom: 52px;
+  }
+  // .hero__link
+  &__link {
+    border-radius: 30px;
+    padding: 18px 36px;
+    background-color: $accent;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+    color: $body-bg;
+    transition: transform $fast;
+
+    &:hover,
+    &:active {
+      transform: translateY(8px);
+    }
+  }
+  // .hero__pic
+  &__pic {
+  }
+  // .hero__img
+  &__img {
+    max-width: 100%;
+  }
+}
+
+// === FOOTER ===
+.footer {
+  padding: 70px 10px 50px;
+  text-align: center;
+
+  // .footer__author
+  &__author {
+    position: relative;
+    margin-bottom: 30px;
+
+    svg {
+      margin-left: 2px;
+      margin-bottom: -8px;
+      width: 30px;
+      height: 30px;
+      animation: beat 0.4s infinite alternate;
+      transform-origin: center;
+
+      /* Heart beat animation */
+      @keyframes beat {
+        to {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  // .footer__copyright
+  &__copyright {
+    font-size: 15px;
+  }
+}
+// === / FOOTER ===
