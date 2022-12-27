@@ -1,6 +1,7 @@
 @import "reset";
 @import "variables";
 @import "global";
+@import "../../node_modules/animate.css/animate.css";
 
 body {
   font-family: "Inter", sans-serif;
@@ -18,9 +19,6 @@ body {
   justify-content: center;
   align-items: center;
 
-  // .header__menu
-  &__menu {
-  }
   // .header__menu-list
   &__menu-list {
     display: flex;
@@ -59,12 +57,6 @@ body {
 
   .logo {
     margin-right: 170px;
-  }
-}
-
-.hero {
-  // .hero__img
-  &__img {
   }
 }
 // === / HEADER ===
@@ -117,6 +109,38 @@ body {
   }
 }
 // === / HERO ===
+
+// === NUTCRACKER ===
+.nutcracker {
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+
+  // .nutcracker__img
+  &__img {
+    max-width: 100%;
+    max-height: 45vw;
+  }
+
+  // .nutcracker__info-box
+  &__info-box {
+    margin-left: 200px;
+  }
+
+  // .nutcracker__title
+  &__title {
+    margin-bottom: 40px;
+    border-left: 1px solid $accent;
+    padding-left: 20px;
+  }
+
+  // .nutcracker__text
+  &__text {
+    font-weight: 400;
+    color: $accent;
+  }
+}
+// === / NUTCRACKER ===
 
 // === FOOTER ===
 .footer {

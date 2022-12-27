@@ -1,3 +1,3 @@
 1] Check for unused files.
 
-2] 
+2] Probably use pure CSS, instead of adding animate.css?

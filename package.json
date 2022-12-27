@@ -16,6 +16,7 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "animate.css": "^4.1.1",
     "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",

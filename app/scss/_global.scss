@@ -6,10 +6,31 @@
   visibility: hidden;
 }
 
+.title,
+.title-md {
+  font-weight: 400;
+  color: $title;
+}
+
 .title {
   text-align: center;
-  font-weight: 400;
   font-size: 46px;
   line-height: 1.1;
-  color: $title;
+}
+
+.title-md {
+  text-align: left;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.site-name {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 40px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 600;
+  font-size: 202px;
+  line-height: 1;
+  color: $site-name;
 }
