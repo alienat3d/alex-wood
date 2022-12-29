@@ -3,7 +3,7 @@ body {
   background-color: $body-bg;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.3;
+  line-height: 1.5;
   color: $text;
 }
 
@@ -39,6 +39,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   border-radius: 30px;
   padding: 18px 36px;
   background-color: $accent;

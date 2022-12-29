@@ -121,8 +121,6 @@
 
 // === THREE-PRODUCTS ===
 .three-products {
-  margin-left: 30px;
-
   // .three-products__title
   &__title {
   }
@@ -132,13 +130,16 @@
   }
   // .three-products__link-box
   &__link-box {
-    margin-right: 20px;
+    margin: 9% 50px auto;
+    text-align: center;
   }
   // .three-products__link
   &__link {
+    margin-bottom: 34px;
   }
   // .three-products__text
   &__text {
+    color: $accent;
   }
   // .three-products__product-box
   &__product-box {
@@ -171,7 +172,6 @@
     margin: 0 auto;
     text-align: center;
     width: 300px;
-    line-height: 1.5;
   }
 }
 // === / THREE-PRODUCTS ===
