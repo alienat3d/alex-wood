@@ -7,10 +7,10 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint --config stylelint.js \"app/scss/**/*.scss\" --customSyntax postcss-scss --fix",
     "test": "npm run editorconfig && npm run stylelint",
-    "start": "gulp watch",
+    "start": "gulp",
     "bem": "gulp bem"
   },
-  "author": "instagram: @html.mentor",
+  "author": "telegram: @alienat3d",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",

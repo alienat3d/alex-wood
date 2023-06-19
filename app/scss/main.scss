@@ -107,8 +107,6 @@
   // .nutcracker__title
   &__title {
     margin-bottom: 40px;
-    border-left: 1px solid $accent;
-    padding-left: 20px;
   }
 
   // .nutcracker__text
@@ -121,9 +119,8 @@
 
 // === THREE-PRODUCTS ===
 .three-products {
-  // .three-products__title
-  &__title {
-  }
+  margin-bottom: 140px;
+
   // .three-products__inner
   &__inner {
     display: flex;
@@ -175,6 +172,33 @@
   }
 }
 // === / THREE-PRODUCTS ===
+
+// === SOME-WORDS ===
+.some-words {
+  margin-bottom: 140px;
+
+  // .some-words__inner
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .some-words__icon
+  &__icon {
+    margin-right: 25px;
+  }
+}
+// === / SOME-WORDS ===
+
+// === GALLERY-SLIDER ===
+.gallery-slider {
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
+}
+// === / GALLERY-SLIDER ===
 
 // === FOOTER ===
 .footer {

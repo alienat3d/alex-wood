@@ -1,2 +1,2 @@
-import {testFunction} from './scripts/test';
-testFunction();
+import { swiper } from "./scripts/swiper.js";
+swiper();

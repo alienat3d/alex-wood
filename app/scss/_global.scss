@@ -29,6 +29,8 @@ body {
 }
 
 .title-md {
+  border-left: 1px solid $accent;
+  padding-left: 20px;
   text-align: left;
   font-size: 38px;
 }
@@ -61,7 +63,7 @@ body {
   padding-left: 40px;
   font-family: "Epilogue", sans-serif;
   font-weight: 600;
-  font-size: 202px;
+  font-size: 200px;
   line-height: 1;
   color: $site-name;
 }
